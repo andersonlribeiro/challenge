@@ -52,7 +52,7 @@ to other topics.
 
 * Communication through issues / pull requests
 
-Guideline | fulfilment criteria | points
+Topic | fulfilment criteria | points
 --- | --- | ---
 source control | is using a source control system mercurial, cvs, git ... | 20
 Continuous Integrating | using CI for automating tests, deploy, quality checks | 15
@@ -68,7 +68,7 @@ Server automation | is familiar with server setup automation | 5
 * "Cyclomatic" complexity
 * Usage of global state
 
-Guideline | fulfilment criteria | points
+Topic | fulfilment criteria | points
 --- | --- | ---
 Works | is possible to execute and delivers described functionality | 20
 Tests | tests exist, they pass, cover the public interface | 15
