@@ -3,6 +3,18 @@ Code challenge Structure, Tasks and result evaluation
 
 ## Introduction
 
+Honeypot provides pre-screening of talent which involves:
+
+  * General validation of human language skills, education,
+professional experience, availability and desired carrier path
+
+  * Technical screening - code quality, technology and best practice
+knowledge
+
+This Repository should serve as a centralised resource for coding
+challenges and common consensus on how to evaluate and rate the
+results of a challenge.
+
 Everything in this document is based on the assumption
 that following holds true:
 
