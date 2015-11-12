@@ -37,6 +37,11 @@ that following holds true:
 The aim is to create a set of polyglot guidelines for basic code
 quality and general work culture evaluation
 
+Every topic has a short description on what is being considered as
+the fulfilment criteria and how many "points" it is being valued.
+"points" is a whole, positive number that represent a relative importance
+to other topics.
+
 ### Work flow
 
 * Usage of a source control system (eg. GIT, SVN)
