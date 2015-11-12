@@ -13,8 +13,6 @@ that following holds true:
 The aim is to create a set of polyglot guidelines for basic code
 quality and general work culture evaluation
 
-
-
 ### Work flow
 
 * Usage of a source control system (eg. GIT, SVN)
@@ -25,13 +23,27 @@ quality and general work culture evaluation
 
 * Communication through issues / pull requests
 
+Guideline | fulfilment criteria | points
+--- | --- | ---
+source control | is using a source control system mercurial, cvs, git ... | 20
+Continuous Integrating | using CI for automating tests, deploy, quality checks | 15
+Documentation | has a README describing what it does, how to set it up, comments/docs in code where required | 10
+Server automation | is familiar with server setup automation | 5
+
 ### Code
 
 * It works (is executable and behaves as specified)
 * existence of tests (unit/integration/acceptance)
 * method/function length
 * class/module length
-* Cyclomatic complexity
+* "Cyclomatic" complexity
 * Usage of global state
 
-
+Guideline | fulfilment criteria | points
+--- | --- | ---
+Works | is possible to execute and delivers described functionality | 20
+Tests | tests exist, they pass, cover the public interface | 15
+method length | methods don't exceed 5-10 lines | 5
+class length | Not more than 100-150 lines | 5
+complexity | No multi level nested else ifs case switches | 5
+global state | used and referenced as little as possible | 5
