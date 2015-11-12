@@ -18,7 +18,19 @@ results of a challenge.
 Everything in this document is based on the assumption
 that following holds true:
 
-* Code is being written once and read many times
+  * Code is being written once and read many times
+
+## List of challenges
+
+### Backend
+
+### Frontend
+
+### Mobile
+
+### Ops / DevOps
+
+### Data science
 
 ## Evaluation grid
 
