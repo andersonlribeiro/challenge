@@ -48,16 +48,17 @@ to other topics.
 * Continuous integration usage (for deploy, testing, quality assurance)
 * Documentation (at least a basic README)
 * Automated server setup (usage of Chef, Ansible, Saltstack, Docker, Vagrant, ...)
-* for using VIM you get extra points (of course) :)
-
 * Communication through issues / pull requests
+
+* for using VIM you get extra points (of course) :)
 
 Topic | fulfilment criteria | points
 --- | --- | ---
 source control | is using a source control system mercurial, cvs, git ... | 20
 Continuous Integrating | using CI for automating tests, deploy, quality checks | 15
-Documentation | has a README describing what it does, how to set it up, comments/docs in code where required | 10
+Documentation | has a README describing what it does, how to set it up, comments/docs in code where required | 15
 Server automation | is familiar with server setup automation | 5
+Issues/pull requests | giving constructive feedback and suggesting solutions | 10
 
 ### Code
 
@@ -74,5 +75,6 @@ Works | is possible to execute and delivers described functionality | 20
 Tests | tests exist, they pass, cover the public interface | 15
 method length | methods don't exceed 5-10 lines | 5
 class length | Not more than 100-150 lines | 5
-complexity | No multi level nested else ifs case switches | 5
+complexity | No multi level nested else ifs case switches | 10
 global state | used and referenced as little as possible | 5
+framework/library usage | using frameworks spring/rails/laravel or non trivial libraries | 10
