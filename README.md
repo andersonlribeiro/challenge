@@ -36,7 +36,7 @@ into gravatar uris
 ```
 
 Source code of the application has to be delivered in form of
-a private git repository to witch you should have or will receive
+a private git repository to which you should have or will receive
 access shortly.
 
 The code should be covered with tests.
@@ -44,7 +44,7 @@ The code should be covered with tests.
 Have a README file describing:
 * what the application does
 * what libraries, frameworks it used and why
-* possible ways of improving the application eg. for performance, readibility ...
+* possible ways of improving the application eg. for performance, readability ...
 
 Contain the following **executables**:
 * `setup` - for installing the dependencies and other setup
