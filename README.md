@@ -37,6 +37,23 @@ Please put attention on every detail and develop it thinking that it will be
 one of the many components of a bigger application (so consider
 side-effects between components, etc.).
 
+#### Acceptance criteria
+- A 4x4 grid is loaded with 16 Pokémon preview infos
+- Every Pokémon there has its own ID, name and its types
+- Clicking on the "Load more Pokémon" a new 4x4 grid is loaded
+- The button disappears and the infinite scrolling is enabled
+- When a Pokémon is clicked, the main Pokémon page is opened
+- That displays the Pokémon's
+  - artwork
+  - name
+  - types
+  - weight and height
+  - evolutions chain
+  - description (from the latest game)
+  - abilities
+  - statistics (based on a scale of 100)
+  - moves (way to learn them and their names)
+
 
 Source code of the application has to be delivered in form of
 a private git repository to which you should have or will receive
