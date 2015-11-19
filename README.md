@@ -26,6 +26,37 @@ that following holds true:
 
 ### Frontend
 
+You'll need to create a tested, maintainable and production ready
+[Pokédex](http://www.pokemon.com/uk/pokedex/) using the APIs provided
+by [pokéapi](http://pokeapi.co).
+
+Feel free to use whatever preprocessor, framework, pattern you prefer
+to create the Pokédex exactly as you see in the
+[design](http://www.pokemon.com/uk/pokedex).
+Please put attention on every detail and develop it thinking that it will be
+one of the many components of a bigger application (so consider
+side-effects between components, etc.).
+
+
+Source code of the application has to be delivered in form of
+a private git repository to which you should have or will receive
+access shortly.
+
+Have a README file describing:
+* implementation details
+* what preprocessors, frameworks it used and why (if they've been used)
+* possible ways of improving the application
+
+Contain the following **executables**:
+* `setup` - for installing the dependencies and other setup
+  related tasks
+* `start` - for starting the web application on a port given
+  through the ENV variable PORT or defaulting to a default one
+* `test` - for running the test suite
+
+The completed version of the code should be marked with a git tag `v1.0.0`
+
+
 ### Mobile
 
 ### Ops / DevOps
