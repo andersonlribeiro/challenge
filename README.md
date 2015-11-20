@@ -44,7 +44,8 @@ side-effects between components, etc.).
 - The button disappears and the infinite scrolling is enabled
 - When a Pokémon is clicked, the main Pokémon page is opened
 - The Pokémon page displays its:
-  - artwork (feel free to use [this][1] and [this][2])
+  - artwork (feel free to use the following links to fetch the images
+    by replacing the corresponding Pokémon's ID: [large][1], [small][2]
   - name
   - types
   - weight and height
