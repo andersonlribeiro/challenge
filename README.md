@@ -43,17 +43,18 @@ side-effects between components, etc.).
 - Clicking on the "Load more Pokémon" a new 4x4 grid is loaded
 - The button disappears and the infinite scrolling is enabled
 - When a Pokémon is clicked, the main Pokémon page is opened
-- That displays the Pokémon's
-  - artwork
+- The Pokémon page displays its:
+  - artwork (feel free to use [this][1] and [this][2])
   - name
   - types
   - weight and height
-  - evolutions chain
-  - description (from the latest game)
+  - descriptions (every game has a different description)
   - abilities
   - statistics (based on a scale of 100)
   - moves (way to learn them and their names)
 
+[1]: https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
+[2]: https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png
 
 Source code of the application has to be delivered in form of
 a private git repository to which you should have or will receive
