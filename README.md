@@ -46,13 +46,15 @@ side-effects between components, etc.).
 - The Pokémon page displays its:
   - artwork (feel free to use the following links to fetch the images
     by replacing the corresponding Pokémon's ID: [large][1], [small][2]
+  - ID
   - name
   - types
   - weight and height
-  - descriptions (every game has a different description)
+  - descriptions (each game has a different description, please pick the
+    latest available one)
   - abilities
   - statistics (based on a scale of 100)
-  - moves (way to learn them and their names)
+  - moves
 
 [1]: https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
 [2]: https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png
