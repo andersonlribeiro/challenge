@@ -51,7 +51,7 @@ Contain the following **executables**:
   related tasks
 * `start` - for starting the web application on a port given
   through the ENV variable PORT or defaulting to a default one
-* `test` - for running the test suit
+* `test` - for running the test suite
 
 The completed version of the code should be marked with a git tag `v1.0.0`
 
