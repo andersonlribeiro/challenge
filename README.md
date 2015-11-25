@@ -70,7 +70,7 @@ Polyglot | capable of writing code in multiple languages | 20
 * method/function length
 * class/module length
 * "Cyclomatic" complexity
-* Usage of global state
+* Framework/library usage
 
 Topic | fulfilment criteria | points
 --- | --- | ---
@@ -79,5 +79,4 @@ Tests | tests exist, they pass, cover the public interface | 15
 method length | methods don't exceed 5-10 lines | 5
 class length | Not more than 100-150 lines | 5
 complexity | No multi level nested else ifs case switches | 10
-global state | used and referenced as little as possible | 5
 framework/library usage | using frameworks spring/rails/laravel or non trivial libraries | 10
