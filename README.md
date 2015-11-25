@@ -24,6 +24,38 @@ that following holds true:
 
 ### Backend
 
+Create a maintainable, production ready web application
+that provides an API endpoint for transforming email addresses
+into gravatar uris
+
+```
+# GET /gravatr/{email}
++ Response 200 (text/plain)
+
+    https://www.gravatar.com/avatar/sdgdsf3535sdfg.jpeg
+```
+
+Source code of the application has to be delivered in form of
+a private git repository to which you should have or will receive
+access shortly.
+
+The code should be covered with tests.
+
+Have a README file describing:
+* what the application does
+* what libraries, frameworks it used and why
+* possible ways of improving the application eg. for performance, readability ...
+
+Contain the following **executables**:
+* `setup` - for installing the dependencies and other setup
+  related tasks
+* `start` - for starting the web application on a port given
+  through the ENV variable PORT or defaulting to a default one
+* `test` - for running the test suite
+
+The completed version of the code should be marked with a git tag `v1.0.0`
+
+
 ### Frontend
 
 ### Mobile
