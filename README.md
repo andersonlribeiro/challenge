@@ -27,8 +27,8 @@ that following holds true:
 ### Frontend
 
 You'll need to create a tested, maintainable and production ready
-[Pokédex](http://www.pokemon.com/uk/pokedex/) using the APIs provided
-by [pokéapi](http://pokeapi.co).
+[Pokémon Encyclopedia](http://www.pokemon.com/uk/pokedex/) using
+the APIs provided by [pokéapi](http://pokeapi.co).
 
 Feel free to use whatever preprocessor, framework, pattern you prefer
 to create the Pokédex exactly as you see in the
