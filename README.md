@@ -58,7 +58,7 @@ Topic | fulfilment criteria | points
 source control | is using a source control system mercurial, cvs, git ... | 20
 Continuous Integrating | using CI for automating tests, deploy, quality checks | 15
 Documentation | has a README describing what it does, how to set it up, comments/docs in code where required | 15
-Server automation | is familiar with server setup automation | 5
+Server automation | is familiar with server setup automation | 15
 Issues/pull requests | giving constructive feedback and suggesting solutions | 10
 Polyglot | capable of writing code in multiple languages | 20
 
