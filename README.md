@@ -39,9 +39,9 @@ side-effects between components, etc.).
 
 #### Acceptance criteria
 - A 4x4 grid is loaded with 16 Pokémon preview infos
-- Every Pokémon there has its own ID, name and its types
+- Every Pokémon there has its own ID, name and types
 - Clicking on the "Load more Pokémon" a new 4x4 grid is loaded
-- The button disappears and the infinite scrolling is enabled
+- Then the button disappears and the infinite scrolling is enabled
 - When a Pokémon is clicked, the main Pokémon page is opened
 - The Pokémon page displays its:
   - artwork (feel free to use the following links to fetch the images
@@ -50,7 +50,7 @@ side-effects between components, etc.).
   - name
   - types
   - weight and height
-  - descriptions (each game has a different description, please pick the
+  - description (each game has a different description, please pick the
     latest available one)
   - abilities
   - statistics (based on a scale of 100)
@@ -63,20 +63,23 @@ Source code of the application has to be delivered in form of
 a private git repository to which you should have or will receive
 access shortly.
 
-Have a README file describing:
+Please provide also a README file describing:
 * implementation details
 * what preprocessors, frameworks it used and why (if they've been used)
 * possible ways of improving the application
 
 Contain the following **executables**:
-* `setup` - for installing the dependencies and other setup
+* `bin/setup` - for installing the dependencies and other setup
   related tasks
-* `start` - for starting the web application on a port given
-  through the ENV variable PORT or defaulting to a default one
-* `test` - for running the test suite
+* `bin/start` - for starting the web application on a port given
+  through the ENV variable PORT or defaulting to a default one (if needed)
+* `bin/test` - for running the test suite (if you made it)
 
 The completed version of the code should be marked with a git tag `v1.0.0`
 
+If you're not able to deliver the challenge completed in every part, feel free
+to release at least the index.
+Developing the whole challenge it's pretty time consuming after all :)
 
 ### Mobile
 
