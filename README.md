@@ -38,6 +38,7 @@ This is why we ask you to consider potentials side-effects (between
 components, etc.) during the development.
 
 ### Design
+https://drive.google.com/open?id=0B3cKl_MrnKolRldOQ3JkdnROOEU
 
 
 #### Acceptance criteria
@@ -60,6 +61,8 @@ components, etc.) during the development.
 
 [1]: https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
 [2]: https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png
+
+### Release infos
 
 Source code of the application has to be delivered in form of
 a private git repository to which you should have or will receive
