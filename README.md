@@ -34,6 +34,9 @@ that following holds true:
 
 ### Mobile
 
+* [cowsay for your mobile devise](/tasks/mobile.md)
+
+
 ### DevOps
 
 * [Automating the setup of Percona master slave setup](/tasks/do_001.md)
