@@ -47,11 +47,11 @@ Have a README file describing:
 * possible ways of improving the application eg. for performance, readability ...
 
 Contain the following **executables**:
-* `setup` - for installing the dependencies and other setup
+* `bin/setup` - for installing the dependencies and other setup
   related tasks
-* `start` - for starting the web application on a port given
+* `bin/start` - for starting the web application on a port given
   through the ENV variable PORT or defaulting to a default one
-* `test` - for running the test suite
+* `bin/test` - for running the test suite
 
 The completed version of the code should be marked with a git tag `v1.0.0`
 
@@ -78,10 +78,10 @@ Add a README file describing:
 * possible improvements eg. for performance, readability, maintainability ...
 
 Contain the following **executables**:
-* `setup` - for fetching, installing the dependencies and other setup
+* `bin/setup` - for fetching, installing the dependencies and other setup
   related tasks
-* `start` - for provisioning and starting the instances
-* `test` - for running the test suit
+* `bin/start` - for provisioning and starting the instances
+* `bin/test` - for running the test suit
 
 The completed version should be marked with a git tag `v1.0.0`
 
@@ -113,7 +113,7 @@ to other topics.
 
 Topic | fulfilment criteria | points
 --- | --- | ---
-source control | is using a source control system mercurial, cvs, git ... | 20
+Source control | is using a source control system mercurial, cvs, git ... | 20
 Continuous Integrating | using CI for automating tests, deploy, quality checks | 15
 Documentation | has a README describing what it does, how to set it up, comments/docs in code where required | 15
 Server automation | is familiar with server setup automation | 15
@@ -121,20 +121,21 @@ Issues/pull requests | giving constructive feedback and suggesting solutions | 1
 Polyglot | capable of writing code in multiple languages | 20
 
 
+Please note that server automation is not always applicable (i.e. frontend challenges).
+
 ### Code
 
 * It works (is executable and behaves as specified)
-* existence of tests (unit/integration/acceptance)
-* method/function length
-* class/module length
-* "Cyclomatic" complexity
+* Existence of tests (unit/integration/acceptance)
+* Method/function length
+* Class/module length
+* Cyclomatic complexity
 * Framework/library usage
 
 Topic | fulfilment criteria | points
 --- | --- | ---
-Works | is possible to execute and delivers described functionality | 20
 Tests | tests exist, they pass, cover the public interface | 15
-method length | methods don't exceed 5-10 lines | 5
-class length | Not more than 100-150 lines | 5
-complexity | No multi level nested else ifs case switches | 10
-framework/library usage | using frameworks spring/rails/laravel or non trivial libraries | 10
+Method length | methods don't exceed 5-10 lines | 5
+Class length | Not more than 100-150 lines | 5
+Complexity | No multi level nested else ifs case switches | 10
+Framework/library usage | using frameworks spring/rails/laravel or non trivial libraries | 10
