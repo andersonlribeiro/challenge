@@ -36,7 +36,7 @@ that following holds true:
 
 ### DevOps
 
-* [Automating the setup of Percona master slafe setup](/tasks/do_001.md)
+* [Automating the setup of Percona master slave setup](/tasks/do_001.md)
 
 
 ### Ops
