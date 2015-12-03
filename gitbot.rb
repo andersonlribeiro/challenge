@@ -19,7 +19,7 @@ role       = roles[short_role]
 abort 'Invalid role provided.' unless role
 
 repository_name = [
-  username,
+  user,
   short_role,
   VERSION
 ].join('_')
