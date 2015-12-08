@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'github_api'
 require 'launchy'
 
