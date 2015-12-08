@@ -25,8 +25,7 @@ repository_name = [
   VERSION
 ].join('_')
 
-auth   = { username: ENV['GH_U'], password: ENV['GH_P'] }.values.join(':')
-github = Github.new(basic_auth: auth)
+github = Github.new(oauth_token: ENV['GH_TOKEN'])
 
 github.repos.create(
   org:  ORGANIZATION,

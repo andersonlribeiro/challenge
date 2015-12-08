@@ -7,8 +7,10 @@ Setup
 -----
 `$ bundle install`
 
-Set inside your environment variables `GH_U` containing your GitHub's username and
-`GH_P` containing your GitHub's password. If you want you can use OAUTH tokens as well.
+Creata a new personal authentication token [here](https://github.com/settings/tokens).
+Aside the default scopes, enable also `write:org`.
+
+Then, set inside your environment variables `GH_TOKEN` the token you get at the end.
 
 Gitbot
 ------

@@ -4,8 +4,7 @@ require 'terminal-table'
 
 ORGANIZATION = 'honeypot-challenges'.freeze
 
-auth   = { username: ENV['GH_U'], password: ENV['GH_P'] }.values.join(':')
-github = Github.new(basic_auth: auth)
+github = Github.new(oauth_token: ENV['GH_TOKEN'])
 
 class Hope
   attr_accessor :name, :updated_at, :branches_count, :pull_requests_count, :commits_count
