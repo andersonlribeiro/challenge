@@ -19,7 +19,7 @@ and invites the challenger (`andrey-bh`) there, setting him as collaborator with
 Then, it opens the repository inside your browser.
 
 Gitlist
-------
+-------
 Sample usage: `ruby gitlist.rb`
 
 It prints a table on your `$STDOUT` with all the repositories contained in this organization
