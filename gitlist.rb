@@ -1,4 +1,5 @@
 require 'github_api'
+require 'terminal-table'
 
 ORGANIZATION = 'honeypot-challenges'.freeze
 
@@ -16,8 +17,8 @@ class Hope
     end
   end
 
-  def to_s
-    "#{@name} – #{@url} – #{completed? ? 'OK' : 'NOPE'}"
+  def to_a
+    [@name, @url, completed? ? 'OK' : 'NOPE']
   end
 
   def completed?
@@ -28,15 +29,19 @@ end
 file = File.expand_path(ARGV[0])
 
 File.open(file, ?w) do |f|
-  github.repos(org: ORGANIZATION).list :every do |repo|
-    hope = Hope.new({
-      name:                repo['name'],
-      url:                 repo['html_url'],
-      branches_count:      github.repos.branches(user: ORGANIZATION, repo: repo['name']).count,
-      pull_requests_count: github.pull_requests.list(user: ORGANIZATION, repo: repo['name']).count,
-      commits_count:       github.repos.commits.list(ORGANIZATION, repo['name']).count
-    })
+  f << Terminal::Table.new(headings: %w(Name URL Ready?)) do |table|
+    table.rows = [].tap do |rows|
+      github.repos(org: ORGANIZATION).list :every do |repo|
+        hope = Hope.new({
+          name:                repo['name'],
+          url:                 repo['html_url'],
+          branches_count:      github.repos.branches(user: ORGANIZATION, repo: repo['name']).count,
+          pull_requests_count: github.pull_requests.list(user: ORGANIZATION, repo: repo['name']).count,
+          commits_count:       github.repos.commits.list(ORGANIZATION, repo['name']).count
+        })
 
-    f << "#{hope}\n"
+        rows << hope.to_a
+      end
+    end
   end
 end
