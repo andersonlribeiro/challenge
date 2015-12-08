@@ -26,7 +26,7 @@ class Hope
 end
 
 results = Terminal::Table.new(headings: %w(Name URL Ready?)) do |table|
-  [].tap do |rows|
+  table.rows = [].tap do |rows|
     github.repos(org: ORGANIZATION).list(:every, per_page: 100) do |repo|
       rows << Hope.new({
         name:                repo['name'],
