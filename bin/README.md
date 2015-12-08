@@ -7,6 +7,9 @@ Setup
 -----
 `$ bundle install`
 
+Set inside your environment variables `GH_U` containing your GitHub's username and
+`GH_P` containing your GitHub's password. If you want you can use OAUTH tokens as well.
+
 Gitbot
 ------
 Sample usage: `ruby gitbot.rb "Andrey Rapshtinskiy" "andrey-bh" be`
