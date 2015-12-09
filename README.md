@@ -87,6 +87,7 @@ Please note that server automation is not always applicable (i.e. frontend chall
 
 Topic | fulfilment criteria | points
 --- | --- | ---
+Works | is possible to execute and delivers described functionality | 20
 Tests | tests exist, they pass, cover the public interface | 15
 Method length | methods don't exceed 5-10 lines | 5
 Class length | Not more than 100-150 lines | 5
