@@ -34,7 +34,7 @@ that following holds true:
 
 ### Mobile
 
-* [cowsay for your mobile devise](/tasks/mobile.md)
+* [twitterwall for your mobile devise](/tasks/mobile.md)
 
 
 ### DevOps
