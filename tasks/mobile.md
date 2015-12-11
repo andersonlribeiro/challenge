@@ -20,8 +20,8 @@ access shortly.
 * The code should be covered with tests.
 
 * Improve the README file describing:
-  - how network heavy the application is and what could be done to minimise
-    networ overhead even more
+  - how network heavy the application is and what could be done to minimize
+    network overhead even more
   - what libraries, frameworks, tools are used and why
   - possible improvements eg. for performance, readability, maintainability ...
 
