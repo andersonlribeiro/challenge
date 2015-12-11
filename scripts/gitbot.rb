@@ -11,7 +11,8 @@ abort 'Usage: ruby gitbot.rb <full name> <username> <role>' if ARGV.length != 3
 roles = {
   be: 'Backend',
   fe: 'Frontend',
-  do: 'DevOps'
+  do: 'DevOps',
+  mo: 'Mobile'
 }
 
 name, user = ARGV
@@ -38,7 +39,11 @@ github.repos.create(
 
 github.repos.collaborators.add ORGANIZATION, repository_name, user
 
-# TODO: Push README
+github.repos.contents.create ORGANIZATION, repository_name, 'README.md',
+  path: "README.md",
+  message: "Initial commit",
+  author: {"name" => "Honeypot Admin", "email" => "admin@honeypot.io"},
+  content: File.read(File.expand_path(File.join(File.dirname(__FILE__), "..", "tasks", "#{short_role}_#{VERSION}.md")))
 
 url = ['https://github.com', ORGANIZATION, repository_name].join('/')
 Launchy.open(url)
