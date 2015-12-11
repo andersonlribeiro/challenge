@@ -42,7 +42,7 @@ github.repos.collaborators.add ORGANIZATION, repository_name, user
 github.repos.contents.create ORGANIZATION, repository_name, 'README.md',
   path: "README.md",
   message: "Initial commit",
-  author: {"name" => "Honeypot Admin", "email" => "admin@honeypot.io"},
+  committer: {"name" => "Honeypot Admin", "email" => "admin@honeypot.io"},
   content: File.read(File.expand_path(File.join(File.dirname(__FILE__), "..", "tasks", "#{short_role}_#{VERSION}.md")))
 
 url = ['https://github.com', ORGANIZATION, repository_name].join('/')
