@@ -12,7 +12,7 @@ class Action
   STEPS = [
     'Not checked',
     'Send coding challenge',
-    'GitHub to be checked',
+    'GitHub to be checked ',
     'Waiting for CC solution',
     'Code evaluated',
     'Introduced to companies',
