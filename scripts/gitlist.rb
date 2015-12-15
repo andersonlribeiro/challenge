@@ -57,9 +57,9 @@ results = [].tap do |rows|
       created_at:          repo['created_at'],
       url:                 repo['html_url'],
       updated_at:          repo['updated_at'],
-      branches_count:      1,#github.repos.branches(user: ORGANIZATION, repo: repo['name']).count,
-      pull_requests_count: 1,#github.pull_requests.list(user: ORGANIZATION, repo: repo['name']).count,
-      commits_count:       1,#github.repos.commits.list(ORGANIZATION, repo['name']).count
+      branches_count:      github.repos.branches(user: ORGANIZATION, repo: repo['name']).count,
+      pull_requests_count: github.pull_requests.list(user: ORGANIZATION, repo: repo['name']).count,
+      commits_count:       github.repos.commits.list(ORGANIZATION, repo['name']).count
     })
   end
 end.sort_by(&:updated_at).map(&:to_a).reverse
