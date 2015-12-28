@@ -1,5 +1,5 @@
 # challenge
-Code challenge Structure, Tasks and result evaluation
+Code challenge structure, tasks and result evaluation
 
 ## Introduction
 
@@ -24,17 +24,17 @@ that following holds true:
 
 ### Backend
 
-* [API for generating gravatar url's from emails](/tasks/be_001.md)
+* [API for getting Gravatar URLs from emails](/tasks/be_001.md)
 
 
 ### Frontend
 
-* [Pokemon Encyclopedia by consuming API's and implementing provided designs](/tasks/fe_001.md)
+* [Pokémon Encyclopedia by consuming APIs and implementing the provided designs](/tasks/fe_001.md)
 
 
 ### Mobile
 
-* [twitterwall for your mobile devise](/tasks/mo_001.md)
+* [A Twitter wall for your mobile device](/tasks/mo_001.md)
 
 
 ### DevOps
@@ -58,26 +58,27 @@ to other topics.
 
 ### Work flow
 
-* Usage of a source control system (eg. GIT, SVN)
+* Usage of a source control system (eg. Git, SVN)
 * Continuous integration usage (for deploy, testing, quality assurance)
 * Documentation (at least a basic README)
-* Automated server setup (usage of Chef, Ansible, Saltstack, Docker, Vagrant, ...)
+* Automated server setup (usage of Chef, Ansible, Saltstack, Docker, Vagrant...)
 * Communication through issues / pull requests
-* Writes and is familiar with multiple languages (Ruby, Clojure, Haskell, Java, Go ..)
+* Writes and is familiar with multiple languages (Ruby, Clojure, Haskell, Java, Go...)
 
 * for using VIM you get extra points (of course) :)
 
 Topic | fulfilment criteria | max points | points
 --- | --- | --- | ---
-Source control | is using a source control system mercurial, cvs, git ... | 20 | ?
-Continuous Integrating | using CI for automating tests, deploy, quality checks | 15 | ?
+Source control | is using a source control system (Git, SVN...) | 20 | ?
+Continuous Integration | is using CI for automating tests, deploy, quality checks | 15 | ?
 Documentation | has a README describing what it does, how to set it up, comments/docs in code where required | 15 | ?
-Server automation | is familiar with server setup automation | 15 | ?
-Issues/pull requests | giving constructive feedback and suggesting solutions | 10 | ?
-Polyglot | capable of writing code in multiple languages | 20 | ?
+Server automation | is provided with tools that are capable to automate the machine's setup | 15 | ?
+Issues/Pull requests | gives constructive feedbacks and suggests solutions | 10 | ?
+Polyglot | is capable of writing code in multiple languages | 20 | ?
 
+/95
 
-Please note that server automation is not always applicable (i.e. frontend challenges).
+Please note that some criteria are not always applicable (i.e. Issues/Pull requests for coding challenges).
 
 ### Code
 
@@ -91,12 +92,13 @@ Please note that server automation is not always applicable (i.e. frontend chall
 Topic | fulfilment criteria | max points | points
 --- | --- | --- | ---
 Works | is possible to execute and delivers described functionality | 20 | ?
-Tests | tests exist, they pass, cover the public interface | 15 | ?
-Method length | methods don't exceed 5-10 lines | 5 | ?
-Class length | Not more than 100-150 lines | 5 | ?
-Complexity | No multi level nested else ifs case switches | 10 | ?
-Framework/library usage | using frameworks spring/rails/laravel or non trivial libraries | 10 | ?
+Tests | is provided with tests that pass and cover the public interface | 15 | ?
+Method length | implements methods that don't exceed 5-10 lines | 5 | ?
+Class length | implements classes that don't exceed 100-150 lines | 5 | ?
+Complexity | shows a linear code that does not contain too much nested structures | 10 | ?
+Framework/library usage | uses frameworks or libraries that are conform to the task and does not reinvent the wheel | 10 | ?
 
+/65
 
 License
 -------
