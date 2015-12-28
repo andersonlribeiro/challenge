@@ -82,7 +82,7 @@ to other topics.
 The following grids are based on the above criteria.
 Please note that some criteria are not always applicable (i.e. Issues/Pull requests for coding challenges).
 
-Topic | fulfilment criteria | max points | points
+Topic | Fulfilment criteria | Available points | Assigned points
 --- | --- | --- | ---
 Source control | is using a source control system (Git, SVN...) | 20 | ?
 Continuous Integration | is using CI for automating tests, deploy, quality checks | 15 | ?
@@ -93,7 +93,7 @@ Polyglot | is capable of writing code in multiple languages | 20 | ?
 
 ?/95
 
-Topic | fulfilment criteria | max points | points
+Topic | Fulfilment criteria | Available points | Assigned points
 --- | --- | --- | ---
 Works | is possible to execute and delivers described functionality | 20 | ?
 Tests | is provided with tests that pass and cover the public interface | 15 | ?
