@@ -67,6 +67,21 @@ to other topics.
 
 * for using VIM you get extra points (of course) :)
 
+### Code
+
+* It works (is executable and behaves as specified)
+* Existence of tests (unit/integration/acceptance)
+* Method/function length
+* Class/module length
+* Cyclomatic complexity
+* Framework/library usage
+* Mastery of used languages and programming principles
+
+### Evaluation grids
+
+The following grids are based on the above criteria.
+Please note that some criteria are not always applicable (i.e. Issues/Pull requests for coding challenges).
+
 Topic | fulfilment criteria | max points | points
 --- | --- | --- | ---
 Source control | is using a source control system (Git, SVN...) | 20 | ?
@@ -76,18 +91,7 @@ Server automation | is provided with tools that are capable to automate the mach
 Issues/Pull requests | gives constructive feedbacks and suggests solutions | 10 | ?
 Polyglot | is capable of writing code in multiple languages | 20 | ?
 
-/95
-
-Please note that some criteria are not always applicable (i.e. Issues/Pull requests for coding challenges).
-
-### Code
-
-* It works (is executable and behaves as specified)
-* Existence of tests (unit/integration/acceptance)
-* Method/function length
-* Class/module length
-* Cyclomatic complexity
-* Framework/library usage
+?/95
 
 Topic | fulfilment criteria | max points | points
 --- | --- | --- | ---
@@ -97,8 +101,9 @@ Method length | implements methods that don't exceed 5-10 lines | 5 | ?
 Class length | implements classes that don't exceed 100-150 lines | 5 | ?
 Complexity | shows a linear code that does not contain too much nested structures | 10 | ?
 Framework/library usage | uses frameworks or libraries that are conform to the task and does not reinvent the wheel | 10 | ?
+Mastery of used languages and programming principles | exploits patterns, best practices and the peculiarities of the used languages | 30 | ?
 
-/65
+?/95
 
 License
 -------
