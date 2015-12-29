@@ -8,7 +8,7 @@ Setup
 `$ bundle install`
 
 Creata a new personal authentication token [here](https://github.com/settings/tokens).
-Aside the default scopes, enable also `write:org`.
+Aside the default scopes, enable also `write:org` and `delete_repo`.
 
 Then, set inside your environment variables `GH_TOKEN` the token you get at the end.
 
