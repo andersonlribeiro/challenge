@@ -7,6 +7,7 @@ HOMEPAGE     = 'https://www.honeypot.io'.freeze
 VERSION      = '001'.freeze
 
 abort 'Usage: ruby gitbot.rb <full name> <username> <role>' if ARGV.length != 3
+abort 'Please set environment variables correctly' unless ENV['GH_TOKEN']
 
 roles = {
   be: 'Backend',
