@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 require 'bitbucket_rest_api'
 require 'launchy'
+require 'git'
+require 'github_api'
 
 ORGANIZATION = 'honeypot-challenges'.freeze
 HOMEPAGE     = 'https://www.honeypot.io'.freeze
@@ -27,21 +29,28 @@ repository_name = [
   VERSION
 ].join('_')
 
-Dir.mkdir('archive') unless Dir.exists?('archive')
-abort 'This repository has been already download' if Dir.exists?("archive/#{repository_name}")
-system "git clone https://github.com/#{ORGANIZATION}/#{repository_name}.git archive/#{repository_name}"
+repository_uris = {
+  current: "https://github.com/#{ORGANIZATION}/#{repository_name}.git",
+  target:  "https://bitbucket.org/#{ORGANIZATION}/#{repository_name}.git"
+}
 
-bitbucket = BitBucket.new login: ENV['BB_EMAIL'], password: ENV['BB_PASS']
+Dir.mkdir('archive') unless Dir.exists?('archive')
+Git.clone(repository_uris[:current], repository_name, path: 'archive')
+
+bitbucket = BitBucket.new(login: ENV['BB_EMAIL'], password: ENV['BB_PASS'])
 bitbucket.repos.create(
   owner: ORGANIZATION,
-  is_private: true,
-  has_wiki:   false,
-  website:    HOMEPAGE
+  name:  repository_name,
+  description: "Mirror for #{user}'s #{role} challenge",
+  is_private:  true,
+  has_wiki:    false,
+  website:     HOMEPAGE
 )
 
-Dir.chdir("archive/#{repository_name}") do
-  system "git push --mirror https://bitbucket.org/#{ORGANIZATION}/#{repository_name}.git"
-end
+git = Git.open("archive/#{repository_name}")
+git.push(repository_uris[:target], 'master', mirror: true)
 
-url = ['https://bitbucket.org', ORGANIZATION, repository_name].join('/')
-Launchy.open(url)
+github = Github.new(oauth_token: ENV['GH_TOKEN'])
+github.repos.delete ORGANIZATION, repository_name
+
+Launchy.open(repository_uris[:target])
