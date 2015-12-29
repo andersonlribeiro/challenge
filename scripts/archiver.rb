@@ -32,7 +32,7 @@ repository_uris = {
 }
 
 Dir.mkdir('archive') unless Dir.exists?('archive')
-Git.clone(repository_uris[:current], repository_name, path: 'archive')
+Git.clone(repository_uris[:current], repository_name, path: 'archive', mirror: true)
 
 bitbucket = BitBucket.new(login: ENV['BB_EMAIL'], password: ENV['BB_PASS'])
 bitbucket.repos.create(
