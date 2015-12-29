@@ -6,10 +6,10 @@ require 'github_api'
 
 ORGANIZATION = 'honeypot-challenges'.freeze
 HOMEPAGE     = 'https://www.honeypot.io'.freeze
-VERSION      = '001'.freeze
+VERSION      = 1.0
 
-abort 'Usage: ruby archiver.rb <username> <role>'  if ARGV.length != 3
-abort 'Please set environment variables correctly' if !ENV['BB_EMAIL'] || !ENV['BB_PASS']
+abort 'Usage: ruby archiver.rb <username> <role> [version]' if ARGV.length < 2
+abort 'Please set environment variables correctly'          if !ENV['BB_EMAIL'] || !ENV['BB_PASS']
 
 roles = {
   be: 'Backend',
@@ -18,16 +18,13 @@ roles = {
   mo: 'Mobile'
 }
 
-name, user = ARGV
-short_role = ARGV[2].to_sym
+user       = ARGV[0]
+short_role = ARGV[1].to_sym
+version    = ARGV.fetch(2, VERSION).to_i.to_s.rjust(3, '0')
 role       = roles[short_role]
 abort 'Invalid role provided.' unless role
 
-repository_name = [
-  user,
-  short_role,
-  VERSION
-].join('_')
+repository_name = [user, short_role, version].join('_')
 
 repository_uris = {
   current: "https://github.com/#{ORGANIZATION}/#{repository_name}.git",
