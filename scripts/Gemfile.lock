@@ -1,11 +1,33 @@
+GIT
+  remote: git://github.com/codeship/bitbucket.git
+  revision: 5c74b389d0d0454333ede89ac0b4a77915e02e25
+  specs:
+    bitbucket_rest_api (0.1.7)
+      faraday (~> 0.9.0)
+      faraday_middleware (~> 0.9.0)
+      hashie
+      multi_json (>= 1.7.5, < 2.0)
+      nokogiri (>= 1.5.2)
+      simple_oauth (~> 0.2.0)
+
+GIT
+  remote: git://github.com/larsxschneider/ruby-git.git
+  revision: 917a56f413ded7cd6fbb7993b58f4585b45a83fa
+  branch: git-mirror
+  specs:
+    git (1.2.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.4.0)
+    coderay (1.1.0)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.2)
+      faraday (>= 0.7.4, < 0.10)
     github_api (0.13.0)
       addressable (~> 2.3)
       descendants_tracker (~> 0.0.4)
@@ -18,6 +40,7 @@ GEM
     jwt (1.5.2)
     launchy (2.4.3)
       addressable (~> 2.3)
+    method_source (0.8.2)
     mini_portile2 (2.0.0)
     multi_json (1.11.2)
     multi_xml (0.5.5)
@@ -30,7 +53,13 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (~> 1.2)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.6.4)
+    simple_oauth (0.2.0)
+    slop (3.6.0)
     terminal-table (1.5.2)
     thread_safe (0.3.5)
 
@@ -38,9 +67,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitbucket_rest_api!
+  git!
   github_api
   launchy
+  pry
   terminal-table
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

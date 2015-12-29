@@ -8,7 +8,7 @@ Setup
 `$ bundle install`
 
 Creata a new personal authentication token [here](https://github.com/settings/tokens).
-Aside the default scopes, enable also `write:org`.
+Aside the default scopes, enable also `write:org` and `delete_repo`.
 
 Then, set inside your environment variables `GH_TOKEN` the token you get at the end.
 
@@ -26,3 +26,11 @@ Sample usage: `ruby gitlist.rb`
 
 It prints a table on your `$STDOUT` with all the repositories contained in this organization
 with a column that informs you if the challenge has been *probably* completed.
+
+Archiver
+--------
+Sample usage: `ruby archiver.rb "andrey-bh" be`
+
+It creates a mirror of given repository from GitHub to BitBucket (but does *not* delete anything!).
+
+In order to use this script, you need to export two environment variables called `BB_EMAIL` and `BB_PASS` containing respectively the email address and the password of your BitBucket account.
