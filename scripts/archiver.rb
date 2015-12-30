@@ -22,17 +22,22 @@ user       = ARGV[0]
 short_role = ARGV[1].to_sym
 version    = ARGV.fetch(2, VERSION).to_i.to_s.rjust(3, '0')
 role       = roles[short_role]
+archive_path = File.expand_path(File.join(File.dirname(__FILE__), 'archive'))
 abort 'Invalid role provided.' unless role
 
 repository_name = [user, short_role, version].join('_')
+repository_path = File.join(archive_path, repository_name)
 
 repository_uris = {
   current: "https://github.com/#{ORGANIZATION}/#{repository_name}.git",
   target:  "https://bitbucket.org/#{ORGANIZATION}/#{repository_name}.git"
 }
 
-Dir.mkdir('archive') unless Dir.exists?('archive')
-Git.clone(repository_uris[:current], repository_name, path: 'archive', mirror: true)
+Dir.mkdir(archive_path) unless Dir.exists?(archive_path)
+
+unless Dir.exists?(repository_path)
+  Git.clone(repository_uris[:current], repository_name, path: archive_path)
+end
 
 bitbucket = BitBucket.new(login: ENV['BB_EMAIL'], password: ENV['BB_PASS'])
 bitbucket.repos.create(
@@ -44,7 +49,7 @@ bitbucket.repos.create(
   website:     HOMEPAGE
 )
 
-git = Git.open("archive/#{repository_name}")
+git = Git.open(repository_path)
 git.push(repository_uris[:target], 'master', mirror: true)
 
 github = Github.new(oauth_token: ENV['GH_TOKEN'])
