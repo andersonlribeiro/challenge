@@ -29,8 +29,8 @@ repository_name = [user, short_role, version].join('_')
 repository_path = File.join(archive_path, repository_name)
 
 repository_uris = {
-  current: "https://github.com/#{ORGANIZATION}/#{repository_name}.git",
-  target:  "https://bitbucket.org/#{ORGANIZATION}/#{repository_name}.git"
+  current: "git@github.com:#{ORGANIZATION}/#{repository_name}.git",
+  target:  "git@bitbucket.org:#{ORGANIZATION}/#{repository_name}.git"
 }
 
 Dir.mkdir(archive_path) unless Dir.exists?(archive_path)
@@ -55,4 +55,4 @@ git.push(repository_uris[:target], 'master', mirror: true)
 github = Github.new(oauth_token: ENV['GH_TOKEN'])
 github.repos.delete ORGANIZATION, repository_name
 
-Launchy.open(repository_uris[:target])
+Launchy.open("https://bitbucket.org/#{ORGANIZATION}")
