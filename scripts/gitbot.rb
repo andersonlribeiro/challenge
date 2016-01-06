@@ -54,3 +54,5 @@ module Gitbot
     Launchy.open("https://github.com/#{ORGANIZATION}/#{repository_name}.git")
   end
 end
+
+Gitbot.run if __FILE__ == $0
