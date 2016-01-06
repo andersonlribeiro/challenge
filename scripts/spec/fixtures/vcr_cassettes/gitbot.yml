@@ -1,0 +1,238 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.github.com/orgs/honeypot-challenges/repos?access_token=thetokenizator
+    body:
+      encoding: UTF-8
+      string: '{"name":"duksis_fe_001","description":"Frontend Challenge v1 Hugo Duksis","private":true,"has_wiki":false,"homepage":"https://www.honeypot.io","has_issues":true,"has_downloads":true}'
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.13.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token thetokenizator
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Jan 2016 11:36:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6464'
+      Status:
+      - 201 Created
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4996'
+      X-Ratelimit-Reset:
+      - '1452083274'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Etag:
+      - '"754d76bbb9df517ca82225d660ee1d75"'
+      X-Oauth-Scopes:
+      - delete_repo, gist, repo, user, write:org
+      X-Accepted-Oauth-Scopes:
+      - public_repo, repo
+      Location:
+      - https://api.github.com/repos/honeypot-challenges/duksis_fe_001
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 065b43cd9674091fec48a221b420fbb3
+      X-Github-Request-Id:
+      - 5B41BD9C:14B62:28F7D499:568CFC45
+    body:
+      encoding: UTF-8
+      string: '{"id":49131522,"name":"duksis_fe_001","full_name":"honeypot-challenges/duksis_fe_001","owner":{"login":"honeypot-challenges","id":15892911,"avatar_url":"https://avatars.githubusercontent.com/u/15892911?v=3","gravatar_id":"","url":"https://api.github.com/users/honeypot-challenges","html_url":"https://github.com/honeypot-challenges","followers_url":"https://api.github.com/users/honeypot-challenges/followers","following_url":"https://api.github.com/users/honeypot-challenges/following{/other_user}","gists_url":"https://api.github.com/users/honeypot-challenges/gists{/gist_id}","starred_url":"https://api.github.com/users/honeypot-challenges/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/honeypot-challenges/subscriptions","organizations_url":"https://api.github.com/users/honeypot-challenges/orgs","repos_url":"https://api.github.com/users/honeypot-challenges/repos","events_url":"https://api.github.com/users/honeypot-challenges/events{/privacy}","received_events_url":"https://api.github.com/users/honeypot-challenges/received_events","type":"Organization","site_admin":false},"private":true,"html_url":"https://github.com/honeypot-challenges/duksis_fe_001","description":"Frontend
+        Challenge v1 Hugo Duksis","fork":false,"url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001","forks_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/forks","keys_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/keys{/key_id}","collaborators_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/teams","hooks_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/hooks","issue_events_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/issues/events{/number}","events_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/events","assignees_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/assignees{/user}","branches_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/branches{/branch}","tags_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/tags","blobs_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/refs{/sha}","trees_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/trees{/sha}","statuses_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/statuses/{sha}","languages_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/languages","stargazers_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/stargazers","contributors_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/contributors","subscribers_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/subscribers","subscription_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/subscription","commits_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/commits{/sha}","git_commits_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/commits{/sha}","comments_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/comments{/number}","issue_comment_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/issues/comments{/number}","contents_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/contents/{+path}","compare_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/compare/{base}...{head}","merges_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/merges","archive_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/downloads","issues_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/issues{/number}","pulls_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/pulls{/number}","milestones_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/milestones{/number}","notifications_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/labels{/name}","releases_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/releases{/id}","created_at":"2016-01-06T11:36:37Z","updated_at":"2016-01-06T11:36:37Z","pushed_at":"2016-01-06T11:36:37Z","git_url":"git://github.com/honeypot-challenges/duksis_fe_001.git","ssh_url":"git@github.com:honeypot-challenges/duksis_fe_001.git","clone_url":"https://github.com/honeypot-challenges/duksis_fe_001.git","svn_url":"https://github.com/honeypot-challenges/duksis_fe_001","homepage":"https://www.honeypot.io","size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_downloads":true,"has_wiki":false,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":0,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"organization":{"login":"honeypot-challenges","id":15892911,"avatar_url":"https://avatars.githubusercontent.com/u/15892911?v=3","gravatar_id":"","url":"https://api.github.com/users/honeypot-challenges","html_url":"https://github.com/honeypot-challenges","followers_url":"https://api.github.com/users/honeypot-challenges/followers","following_url":"https://api.github.com/users/honeypot-challenges/following{/other_user}","gists_url":"https://api.github.com/users/honeypot-challenges/gists{/gist_id}","starred_url":"https://api.github.com/users/honeypot-challenges/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/honeypot-challenges/subscriptions","organizations_url":"https://api.github.com/users/honeypot-challenges/orgs","repos_url":"https://api.github.com/users/honeypot-challenges/repos","events_url":"https://api.github.com/users/honeypot-challenges/events{/privacy}","received_events_url":"https://api.github.com/users/honeypot-challenges/received_events","type":"Organization","site_admin":false},"network_count":0,"subscribers_count":5}'
+    http_version:
+  recorded_at: Wed, 06 Jan 2016 11:38:18 GMT
+- request:
+    method: put
+    uri: https://api.github.com/repos/honeypot-challenges/duksis_fe_001/contents/README.md?access_token=thetokenizator
+    body:
+      encoding: UTF-8
+      string: '{"path":"README.md","message":"Initial commit","committer":{"name":"Honeypot
+        Admin","email":"admin@honeypot.io"},"content":"IyBGcm9udEVuZCBjaGFsbGVuZ2UgdjEKCi0tLQoKVGhlIHRhc2sKLS0tLS0tLS0KCllvdSdyZSBhc2tlZCB0byBjcmVhdGUgYSB0ZXN0ZWQsIG1haW50YWluYWJsZSBhbmQgcHJvZHVjdGlvbiByZWFkeQpbUG9rw6ltb24gRW5jeWNsb3BlZGlhXShodHRwOi8vd3d3LnBva2Vtb24uY29tL3VrL3Bva2VkZXgvKSB1c2luZwp0aGUgQVBJcyBwcm92aWRlZCBieSBbcG9rw6lhcGldKGh0dHA6Ly9wb2tlYXBpLmNvKS4KCkZlZWwgZnJlZSB0byB1c2Ugd2hhdGV2ZXIgcHJlcHJvY2Vzc29yLCBmcmFtZXdvcmssIHBhdHRlcm4geW91IHByZWZlcgp0byBjcmVhdGUgdGhlIFBva8OpZGV4IGV4YWN0bHkgYXMgeW91IHNlZSBpbiB0aGUgZGVzaWducyB3ZSBwcm92aWRlZC4KUGxlYXNlIHB1dCBhdHRlbnRpb24gb24gZXZlcnkgZGV0YWlsIGFuZCBkZXZlbG9wIGl0IGNvbnNpZGVyaW5nIHRoYXQKaXQgd2lsbCBiZSBvbmUgb2YgdGhlIG1hbnkgY29tcG9uZW50cyBvZiBhIGJpZ2dlciBhcHBsaWNhdGlvbi4KVGhpcyBpcyB3aHkgd2UgYXNrIHlvdSB0byBjb25zaWRlciBwb3RlbnRpYWxzIHNpZGUtZWZmZWN0cyAoYmV0d2Vlbgpjb21wb25lbnRzLCBldGMuKSBkdXJpbmcgdGhlIGRldmVsb3BtZW50LgoKIyMjIERlc2lnbgpodHRwczovL2RyaXZlLmdvb2dsZS5jb20vb3Blbj9pZD0wQjNjS2xfTXJuS29sUmxkT1EzSmtkblJPT0VVCgojIyMjIEFjY2VwdGFuY2UgY3JpdGVyaWEKLSBBIDR4NCBncmlkIGlzIGxvYWRlZCB3aXRoIDE2IFBva8OpbW9uCi0gRXZlcnkgUG9rw6ltb24gaW4gdGhhdCBncmlkIHNob3dzIGl0cyBvd24gSUQsIG5hbWUgYW5kIHR5cGVzCi0gQ2xpY2tpbmcgb24gdGhlICJMb2FkIG1vcmUgUG9rw6ltb24iIGJ1dHRvbiBhIG5ldyA0eDQgZ3JpZCBpcyBsb2FkZWQKLSBXaGVuIGNsaWNrZWQsIHRoZSBidXR0b24gZGlzYXBwZWFycyBhbmQgdGhlIGluZmluaXRlIHNjcm9sbGluZyBpcyBlbmFibGVkCi0gV2hlbiBhIFBva8OpbW9uIGlzIGNsaWNrZWQsIHRoZSBzaW5nbGUgUG9rw6ltb24gcGFnZSBpcyBvcGVuZWQgZGlzcGxheWluZzoKICAtIGFydHdvcmsgKGZlZWwgZnJlZSB0byB1c2UgdGhlIGZvbGxvd2luZyBsaW5rcyB0byBmZXRjaCB0aGUgaW1hZ2VzCiAgICAgIGJ5IHJlcGxhY2luZyB0aGUgY29ycmVzcG9uZGluZyBQb2vDqW1vbidzIElEOiBbbGFyZ2VdWzFdLCBbc21hbGxdWzJdCiAgLSBJRAogIC0gbmFtZQogIC0gdHlwZXMKICAtIHdlaWdodCBhbmQgaGVpZ2h0CiAgLSBkZXNjcmlwdGlvbiAoZWFjaCBnYW1lIGhhcyBhIGRpZmZlcmVudCBkZXNjcmlwdGlvbiwgc28gcGxlYXNlIHBpY2sgdGhlCiAgICBsYXRlc3QgYXZhaWxhYmxlIG9uZSkKICAtIGFiaWxpdGllcwogIC0gc3RhdGlzdGljcyAoYmFzZWQgb24gYSBzY2FsZSBvZiAxMDApCiAgLSBtb3ZlcwoKWzFdOiBodHRwczovL2Fzc2V0cy5wb2tlbW9uLmNvbS9hc3NldHMvY21zMi9pbWcvcG9rZWRleC9mdWxsLzAwMS5wbmcKWzJdOiBodHRwczovL2Fzc2V0cy5wb2tlbW9uLmNvbS9hc3NldHMvY21zMi9pbWcvcG9rZWRleC9kZXRhaWwvMDAxLnBuZwoKIyMjIFJlbGVhc2UgaW5mb3MKClNvdXJjZSBjb2RlIG9mIHRoZSBhcHBsaWNhdGlvbiBoYXMgdG8gYmUgZGVsaXZlcmVkIGluIGZvcm0gb2YKYSBwcml2YXRlIGdpdCByZXBvc2l0b3J5IHRvIHdoaWNoIHlvdSBzaG91bGQgaGF2ZSBvciB3aWxsIHJlY2VpdmUKYWNjZXNzIHNob3J0bHkuCgpQbGVhc2UgcHJvdmlkZSBhbHNvIGEgUkVBRE1FIGZpbGUgZGVzY3JpYmluZzoKKiBpbXBsZW1lbnRhdGlvbiBkZXRhaWxzCiogd2hhdCBwcmVwcm9jZXNzb3JzLCBmcmFtZXdvcmtzIGl0IHVzZWQgYW5kIHdoeSAoaWYgdGhleSd2ZSBiZWVuIHVzZWQpCiogcG9zc2libGUgd2F5cyBvZiBpbXByb3ZpbmcgdGhlIGFwcGxpY2F0aW9uCgpDb250YWluIHRoZSBmb2xsb3dpbmcgKipleGVjdXRhYmxlcyoqOgoqIGBiaW4vc2V0dXBgIC0gZm9yIGluc3RhbGxpbmcgdGhlIGRlcGVuZGVuY2llcyBhbmQgb3RoZXIgc2V0dXAKcmVsYXRlZCB0YXNrcwoqIGBiaW4vc3RhcnRgIC0gZm9yIHN0YXJ0aW5nIHRoZSB3ZWIgYXBwbGljYXRpb24gb24gYSBwb3J0IGdpdmVuCnRocm91Z2ggdGhlIEVOViB2YXJpYWJsZSBQT1JUIG9yIGRlZmF1bHRpbmcgdG8gYSBkZWZhdWx0IG9uZSAoaWYgbmVlZGVkKQoqIGBiaW4vdGVzdGAgLSBmb3IgcnVubmluZyB0aGUgdGVzdCBzdWl0ZSAoaWYgeW91IG1hZGUgaXQpCgpUaGUgY29tcGxldGVkIHZlcnNpb24gb2YgdGhlIGNvZGUgc2hvdWxkIGJlIG1hcmtlZCB3aXRoIGEgZ2l0IHRhZyBgdjEuMC4wYAoKSWYgeW91J3JlIG5vdCBhYmxlIHRvIGRlbGl2ZXIgdGhlIGNoYWxsZW5nZSBjb21wbGV0ZWQgaW4gZXZlcnkgcGFydCwgZmVlbCBmcmVlCnRvIHJlbGVhc2UgYXQgbGVhc3QgdGhlIGluZGV4LgpEZXZlbG9waW5nIHRoZSB3aG9sZSBjaGFsbGVuZ2UgaXQncyBwcmV0dHkgdGltZSBjb25zdW1pbmcgYWZ0ZXIgYWxsIDopCgoKSGF2ZSBmdW4hCgoKTGljZW5zZQotLS0tLS0tCgpDb3B5cmlnaHQgwqkgMjAxNSBIb25leXBvdCBHbWJILiBBbGwgcmlnaHRzIHJlc2VydmVkLgoKCkFib3V0IEhvbmV5cG90Ci0tLS0tLS0tLS0tLS0tCgohW0hvbmV5cG90XShodHRwczovL3d3dy5ob25leXBvdC5pby9sb2dvLnBuZykKCkhvbmV5cG90IGlzIGEgZGV2ZWxvcGVyIGZvY3VzZWQgam9iIHBsYXRmb3JtLgpUaGUgbmFtZXMgYW5kIGxvZ29zIGZvciBIb25leXBvdCBhcmUgdHJhZGVtYXJrcyBvZiBIb25leXBvdCBHbWJILgo="}'
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.13.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token thetokenizator
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Jan 2016 11:36:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1624'
+      Status:
+      - 201 Created
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4995'
+      X-Ratelimit-Reset:
+      - '1452083274'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Etag:
+      - '"19549a9aee37c3389d52b4a423309c37"'
+      X-Oauth-Scopes:
+      - delete_repo, gist, repo, user, write:org
+      X-Accepted-Oauth-Scopes:
+      - ''
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 7f48e2f7761567e923121f17538d7a6d
+      X-Github-Request-Id:
+      - 5B41BD9C:14B57:71B7076:568CFC46
+    body:
+      encoding: UTF-8
+      string: '{"content":{"name":"README.md","path":"README.md","sha":"e6baed861ca44bf556439e0dca280f39dc620841","size":2747,"url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/contents/README.md?ref=master","html_url":"https://github.com/honeypot-challenges/duksis_fe_001/blob/master/README.md","git_url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/blobs/e6baed861ca44bf556439e0dca280f39dc620841","download_url":"https://raw.githubusercontent.com/honeypot-challenges/duksis_fe_001/master/README.md?token=AANjlap6PJhDFkaYk8vhMjEqUgP7D3uYks5WjPyCwA%3D%3D","type":"file","_links":{"self":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/contents/README.md?ref=master","git":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/blobs/e6baed861ca44bf556439e0dca280f39dc620841","html":"https://github.com/honeypot-challenges/duksis_fe_001/blob/master/README.md"}},"commit":{"sha":"da4ead88a1aaa77406c857e5b743de655a44e05d","url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/commits/da4ead88a1aaa77406c857e5b743de655a44e05d","html_url":"https://github.com/honeypot-challenges/duksis_fe_001/commit/da4ead88a1aaa77406c857e5b743de655a44e05d","author":{"name":"Honeypot
+        Admin","email":"admin@honeypot.io","date":"2016-01-06T11:36:38Z"},"committer":{"name":"Honeypot
+        Admin","email":"admin@honeypot.io","date":"2016-01-06T11:36:38Z"},"tree":{"sha":"e67288ad3950a6884cbbb6dbd3586bcbb1528bc8","url":"https://api.github.com/repos/honeypot-challenges/duksis_fe_001/git/trees/e67288ad3950a6884cbbb6dbd3586bcbb1528bc8"},"message":"Initial
+        commit","parents":[]}}'
+    http_version:
+  recorded_at: Wed, 06 Jan 2016 11:38:19 GMT
+- request:
+    method: put
+    uri: https://api.github.com/repos/honeypot-challenges/duksis_fe_001/collaborators/duksis?access_token=thetokenizator
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.13.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - token thetokenizator
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 06 Jan 2016 11:36:39 GMT
+      Status:
+      - 204 No Content
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4994'
+      X-Ratelimit-Reset:
+      - '1452083274'
+      X-Oauth-Scopes:
+      - delete_repo, gist, repo, user, write:org
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Accept-Encoding
+      X-Served-By:
+      - bae57931a6fe678a3dffe9be8e7819c8
+      X-Github-Request-Id:
+      - 5B41BD9C:14B5D:136AC0B3:568CFC46
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Wed, 06 Jan 2016 11:38:19 GMT
+recorded_with: VCR 3.0.1

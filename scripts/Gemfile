@@ -6,3 +6,7 @@ gem 'terminal-table'
 gem 'bitbucket_rest_api', github: 'codeship/bitbucket'
 gem 'git', github: 'larsxschneider/ruby-git', branch: 'git-mirror'
 gem 'pry'
+
+gem 'rspec'
+gem 'webmock'
+gem 'vcr'
