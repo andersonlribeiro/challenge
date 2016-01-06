@@ -36,8 +36,6 @@ github.repos.create(
   homepage: HOMEPAGE
 )
 
-github.repos.collaborators.add(ORGANIZATION, repository_name, user)
-
 task = File.read(File.expand_path(
   File.join(File.dirname(__FILE__), '..', 'tasks', "#{short_role}_#{VERSION}.md")
 ))
@@ -48,5 +46,7 @@ github.repos.contents.create(ORGANIZATION, repository_name, 'README.md',
   committer: COMMITTER,
   content:   task
 )
+
+github.repos.collaborators.add(ORGANIZATION, repository_name, user)
 
 Launchy.open("https://github.com/#{ORGANIZATION}/#{repository_name}.git")
