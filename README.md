@@ -111,7 +111,7 @@ Mastery of used languages and programming principles | exploits patterns, best p
 License
 -------
 
-Copyright © 2015 Honeypot GmbH. All rights reserved.
+Copyright © 2016 Honeypot GmbH. All rights reserved.
 
 
 About Honeypot
