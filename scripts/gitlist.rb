@@ -22,6 +22,10 @@ class Hope
     [full_name, challenge, @url, status, sent_at]
   end
 
+  def ready?
+    branches_count > 1 or pull_requests_count > 0 or commits_count > 1
+  end
+
   private
 
   def username
@@ -34,10 +38,6 @@ class Hope
 
   def full_name
     @description.split(' ')[3..-1].join(' ')
-  end
-
-  def ready?
-    branches_count > 1 or pull_requests_count > 0 or commits_count > 1
   end
 
   def status
@@ -62,7 +62,7 @@ results = [].tap do |rows|
       commits_count:       github.repos.commits.list(ORGANIZATION, repo['name']).count
     })
   end
-end.sort_by(&:updated_at).map(&:to_a).reverse
+end.partition(&:ready?).flatten.map(&:to_a)
 
 if ARGV.empty?
   puts Terminal::Table.new(headings: HEADINGS, rows: results)
