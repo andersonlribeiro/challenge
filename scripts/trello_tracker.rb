@@ -4,6 +4,11 @@ require 'json'
 require 'csv'
 require 'terminal-table'
 
+## How to export a older data from Trello
+# $TOKEN = $.cookie('token')
+# http GET "https://api.trello.com/1/boards/BliSIgba/actions" "Cookie:token=$TOKEN" "since==Apr 1 2013 EDT" "limit==1000" "filter==updateCard" > trello.json
+##
+
 abort 'input is required' if ARGV.empty?
 
 class Action
@@ -49,8 +54,9 @@ HEADINGS = %w(ID Talent Date Step\ before Step\ after)
 results = [].tap do |rows|
   data = File.read File.expand_path(ARGV.shift)
   data = JSON.parse data
+  data = data.is_a?(Array) ? data : data['action']
 
-  data['actions'].each do |action|
+  data.each do |action|
     next unless action['type'] == 'updateCard'
     next unless action['data']['listAfter']
 
