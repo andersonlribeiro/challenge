@@ -3,6 +3,7 @@ require 'github_api'
 require 'terminal-table'
 require 'csv'
 require 'date'
+require 'launchy'
 
 ORGANIZATION = 'honeypot-challenges'.freeze
 HEADINGS     = %w(Talent Challenge Repository\ URL Ready? Sent\ at).freeze
@@ -62,14 +63,23 @@ results = [].tap do |rows|
       commits_count:       github.repos.commits.list(ORGANIZATION, repo['name']).count
     })
   end
-end.partition(&:ready?).flatten.map(&:to_a)
+end
 
-if ARGV.empty?
-  puts Terminal::Table.new(headings: HEADINGS, rows: results)
+if ['--browse', '-b'].include?(ARGV[0])
+  results.select(&:ready?).each do |r|
+    url = r.instance_variable_get("@url")
+    Launchy.open(url)
+  end
 else
-  filename = File.expand_path(ARGV[0])
-  CSV.open(filename, 'wb') do |csv|
-    csv << HEADINGS
-    results.each { |result| csv << result }
+  results = results.partition(&:ready?).flatten.map(&:to_a)
+
+  if ARGV.empty?
+    puts Terminal::Table.new(headings: HEADINGS, rows: results)
+  else
+    filename = File.expand_path(ARGV[0])
+    CSV.open(filename, 'wb') do |csv|
+      csv << HEADINGS
+      results.each { |result| csv << result }
+    end
   end
 end
