@@ -35,7 +35,9 @@ repository_uris = {
 
 Dir.mkdir(archive_path) unless Dir.exists?(archive_path)
 
-unless Dir.exists?(repository_path)
+if Dir.exists?(repository_path)
+  abort 'This repositories has already been cloned locally.'
+else
   Git.clone(repository_uris[:current], repository_name, path: archive_path)
 end
 
