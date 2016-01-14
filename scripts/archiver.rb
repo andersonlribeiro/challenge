@@ -57,4 +57,4 @@ git.push(repository_uris[:target], 'master', mirror: true)
 github = Github.new(oauth_token: ENV['GH_TOKEN'])
 github.repos.delete ORGANIZATION, repository_name
 
-Launchy.open("https://bitbucket.org/#{ORGANIZATION}")
+Launchy.open("https://bitbucket.org/#{ORGANIZATION}/#{repository_name}")
