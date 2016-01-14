@@ -34,4 +34,5 @@ Sample usage: `ruby archiver.rb "andrey-bh" be`
 It creates a mirror of given repository from GitHub to BitBucket (but does *not* delete anything!).
 
 In order to use this script, you need to export two environment variables called `BB_EMAIL` and `BB_PASS` containing respectively the email address and the password of your BitBucket account.
-Also give your SSH public key to [GitHub](https://github.com/settings/ssh).
+
+Also give your SSH public key to both GitHub and BitBucket.
