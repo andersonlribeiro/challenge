@@ -105,7 +105,7 @@ Mastery of used languages and programming principles | exploits patterns, best p
 
 ?/95
 
-(?/160) = ? * 10 (**?**)
+(?/190) = ? * 10 (**?**)
 
 
 License
