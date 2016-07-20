@@ -14,10 +14,10 @@ Then, set inside your environment variables `GH_TOKEN` the token you get at the 
 
 Gitbot
 ------
-Sample usage: `ruby gitbot.rb "Andrey Rapshtinskiy" "andrey-bh" be`
+Sample usage: `ruby gitbot.rb "Hugo Duksis" "duksis" be`
 
-It creates a new private repository (i.e. `AndreyRapshtinskiy_be_001`) inside this organization
-and invites the challenger (`andrey-bh`) there, setting him as collaborator with r/w permissions.
+It creates a new private repository (i.e. `duksis_be_001`) inside this organization
+and invites the challenger (`duksis`) there, setting him as collaborator with r/w permissions.
 Then, it opens the repository inside your browser.
 
 Gitlist
@@ -29,7 +29,7 @@ with a column that informs you if the challenge has been *probably* completed.
 
 Archiver
 --------
-Sample usage: `ruby archiver.rb "andrey-bh" be`
+Sample usage: `ruby archiver.rb "duksis" be`
 
 It creates a mirror of given repository from GitHub to BitBucket (but does *not* delete anything!).
 
